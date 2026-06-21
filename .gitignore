@@ -1,0 +1,22 @@
+# Dataset (auto-downloaded from UCI on first run)
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Secrets / environment
+.env
+*.key
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Note: results/xgb_model.json + model_config.json are kept on purpose as the
+# trained artifact used by src/inference.py.

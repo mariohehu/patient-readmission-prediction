@@ -1,0 +1,72 @@
+CLINICAL EXPLAINABILITY REPORT
+==================================================
+
+Top Risk Factors for 30-Day Hospital Readmission:
+--------------------------------------------------
+   1. number_inpatient
+      SHAP impact: 0.3071
+      Clinical context: Prior inpatient visits — strong indicator of disease complexity
+
+   2. discharge_disposition_id_3
+      SHAP impact: 0.0678
+      Clinical context: Discharge disposition — transition of care quality
+
+   3. complexity_score
+      SHAP impact: 0.0625
+      Clinical context: Clinical feature
+
+   4. age_ordinal
+      SHAP impact: 0.0615
+      Clinical context: Patient age — elderly patients at higher readmission risk
+
+   5. discharge_disposition_id_22
+      SHAP impact: 0.0519
+      Clinical context: Discharge disposition — transition of care quality
+
+   6. lab_to_proc_ratio
+      SHAP impact: 0.0503
+      Clinical context: Clinical feature
+
+   7. time_in_hospital
+      SHAP impact: 0.0399
+      Clinical context: Length of stay — proxy for illness severity
+
+   8. meds_per_day
+      SHAP impact: 0.0342
+      Clinical context: Clinical feature
+
+   9. number_diagnoses
+      SHAP impact: 0.0313
+      Clinical context: Diagnostic complexity — multiple comorbidities
+
+  10. diabetesMed
+      SHAP impact: 0.0312
+      Clinical context: Clinical feature
+
+  11. insulin
+      SHAP impact: 0.0288
+      Clinical context: Insulin management — diabetes control indicator
+
+  12. number_emergency
+      SHAP impact: 0.0274
+      Clinical context: ED utilization — healthcare access pattern
+
+  13. diag_1_group_respiratory
+      SHAP impact: 0.0215
+      Clinical context: Clinical feature
+
+  14. A1Cresult
+      SHAP impact: 0.0210
+      Clinical context: HbA1c level — glycemic control marker
+
+  15. metformin
+      SHAP impact: 0.0197
+      Clinical context: Clinical feature
+
+==================================================
+Note: SHAP values indicate average absolute contribution
+to the model's readmission risk prediction. Higher values
+mean the feature has more influence on predictions.
+
+This analysis is for research purposes only and should not
+be used as a substitute for clinical judgment.

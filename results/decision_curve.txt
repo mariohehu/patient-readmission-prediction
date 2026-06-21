@@ -1,0 +1,12 @@
+Decision Curve Analysis (net benefit)
+========================================
+
+Disease prevalence: 0.114
+Model adds net benefit over treat-all/none at pt in: 0.01-0.50
+
+    pt     model  treat_all
+  0.10    0.0341     0.0154
+  0.15    0.0156    -0.0425
+  0.20    0.0089    -0.1076
+  0.30    0.0040    -0.2659
+  0.40    0.0019    -0.4768

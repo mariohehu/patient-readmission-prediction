@@ -1,0 +1,38 @@
+Patient Readmission Prediction — Summary
+==================================================
+
+Dataset: UCI Diabetes 130-US Hospitals
+Patients: 99,343
+Features: 117
+Positive rate: 11.4%
+
+Test Results (XGBoost):
+  ROC-AUC:        0.6706
+  Avg Precision:   0.2324
+  Sensitivity:     0.5484
+  Specificity:     0.7014
+  F1-Score:        0.2833
+
+Cross-Validation (5-fold):
+  auc: 0.6593 +/- 0.0058
+  f1: 0.2762 +/- 0.0047
+  precision: 0.1946 +/- 0.0032
+  recall: 0.4760 +/- 0.0100
+
+Model Comparison (test):
+  XGBoost      AUC=0.6706  PR-AUC=0.2324  best-F1=0.2833
+  LogisticReg  AUC=0.6654  PR-AUC=0.2195  best-F1=0.2796
+  LightGBM     AUC=0.6357  PR-AUC=0.1876  best-F1=0.2045
+
+Clinical operating point (target recall 80%):
+  threshold=0.400  precision=0.145  recall=0.806
+
+Calibration (isotonic):  ECE 0.3384 -> 0.0033  |  Brier 0.2147 -> 0.0959
+
+Fairness — ROC-AUC spread across subgroups:
+  gender   0.660 - 0.683 (spread 0.023)
+  age      0.649 - 0.730 (spread 0.081)
+  race     0.603 - 0.775 (spread 0.172)
+
+See: model_comparison.*, threshold_analysis.*, fairness_analysis.*,
+     calibration_comparison.png, decision_curve.* (net benefit, calibrated probs)

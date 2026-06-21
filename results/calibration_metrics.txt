@@ -1,0 +1,6 @@
+Probability Calibration (isotonic)
+========================================
+
+                     ECE     Brier
+Uncalibrated      0.3384    0.2147
+Calibrated        0.0033    0.0959

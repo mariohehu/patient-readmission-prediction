@@ -1,0 +1,28 @@
+Subgroup Fairness Analysis
+==================================================
+
+Decision threshold: 0.400
+(subgroups with < 20 positives or negatives are omitted)
+
+By gender:
+  group                       n   pos%    AUC   Sens    PPV     F1
+  Female                  10651  11.3  0.660  0.804  0.141  0.239
+  Male                     9218  11.5  0.683  0.808  0.150  0.253
+  -> AUC spread across gender: 0.023
+
+By age:
+  group                       n   pos%    AUC   Sens    PPV     F1
+  50-70                    7874  10.8  0.671  0.753  0.145  0.243
+  70+                      8812  12.0  0.649  0.873  0.135  0.234
+  <50                      3183  11.2  0.730  0.732  0.194  0.307
+  -> AUC spread across age: 0.081
+
+By race:
+  group                       n   pos%    AUC   Sens    PPV     F1
+  AfricanAmerican/Missing   4284  10.9  0.666  0.792  0.142  0.242
+  Asian                     128  15.6  0.769  0.750  0.238  0.361
+  Caucasian               14743  11.6  0.670  0.810  0.146  0.247
+  Hispanic                  410   7.8  0.775  0.875  0.124  0.218
+  Other                     304   9.9  0.603  0.733  0.126  0.216
+  -> AUC spread across race: 0.172
+
